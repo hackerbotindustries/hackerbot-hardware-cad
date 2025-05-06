@@ -1,0 +1,41 @@
+name: "Feature Request"
+description: "Suggest a new feature or enhancement."
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: "## Feature Request"
+  - type: input
+    id: summary
+    attributes:
+      label: "Feature Summary"
+      description: "Provide a short summary of the feature request."
+      placeholder: "A brief description of the feature."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Full Description"
+      description: "Provide a detailed explanation of the feature, including goals, benefits, and potential use cases."
+      placeholder: "Describe the feature in detail..."
+  - type: textarea
+    id: related-programs
+    attributes:
+      label: "Related Programs"
+      description: "Does this feature relate to any existing program or module?"
+  - type: textarea
+    id: how-to-review
+    attributes:
+      label: "How to Review"
+      description: "Explain how this feature should be reviewed and tested."
+    validations:
+      required: true
+  - type: textarea
+    id: implementation-approach
+    attributes:
+      label: "Implementation Approach"
+      description: "Detail the approach to implementing this feature."
+    validations:
+      required: true
